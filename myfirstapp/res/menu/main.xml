@@ -1,9 +1,16 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:com.example.myfirstapp="http://schemas.android.com/apk/res-auto" >
 
     <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/search12"
+        com.example.myfirstapp:showAsAction="ifRoom"
+        android:title="@string/action_search"/>
+    <!-- Settings, should always be in the overflow -->
+    <item
         android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:showAsAction="never"
+    
+        com.example.myfirstapp:showAsAction="never"
         android:title="@string/action_settings"/>
 
 </menu>
